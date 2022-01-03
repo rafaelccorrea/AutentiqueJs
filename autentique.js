@@ -3,7 +3,7 @@ const { default: api} = require('autentique-v2-nodejs')
  api.token = process.env.AUTENTIQUE_TOKEN;
  api.url = process.env.URL;
 
- const criarDocumento = async (dadoscliente, url) => {
+ const createDocument = async (dadoscliente, url) => {
 
     const attributes = {
         document: {
@@ -21,7 +21,7 @@ const { default: api} = require('autentique-v2-nodejs')
 
 };
 
-const listarDocumento = async (documento) => {
+const listDocumentById = async (documento) => {
 
      const documentId = { documentId: documento }
      const contrato =  await api.document.listById(documentId);
@@ -29,14 +29,14 @@ const listarDocumento = async (documento) => {
 
 };
 
-const listarTodosDocumento = async () => {
+const listDocumentAll = async () => {
 
-    const contrato =  await api.document.listAll(1);
+    const contrato =  await api.document.listAll(10);
     return { contrato };
 
 };
 
-const assinarDocumento = async (documento) => {
+const signDocument = async (documento) => {
 
     const documentId = { documentId: documento }
     const contrato = await api.document.signById(documentId)
@@ -44,42 +44,42 @@ const assinarDocumento = async (documento) => {
 
 };
 
-const criarPasta = async (dados) => {
-    const pasta = {
+const createFolder = async (dados) => {
+    const folder = {
         folder: {
             name: dados.id_cliente + ' - ' + dados.chave
         }
     }
 
-    return await api.folder.create(pasta);
+    return await api.folder.create(folder);
 
 }
 
-const movendoPasta = async (arquivo, assinatura) => {
+const moveDocumentsFolder = async (arquivo, assinatura) => {
 
-    const pasta = {
+    const folder = {
             documentId: assinatura.data.createDocument.id,
             folderId: arquivo.data.createFolder.id
     }
     
-    return await api.folder.moveDocumentById(pasta);
+    return await api.folder.moveDocumentById(folder);
 }
 
-const listarTodasPastas = async () => {
+const listFolderAll = async () => {
 
-    const pasta = await api.folder.listAll(1);
-    const result = pasta.data.folders
+    const folder = await api.folder.listAll(1);
+    const result = folder.data.folders
     return { result };
 
 };
 
 //Inativo
-const ListPasta = async (folder) => {
+const listFolderById = async (folder) => {
     const folderId = {
         folderId: folder.data.createFolder.id || folder
     }
-    const pasta = await api.folder.listById(folderId);
-    return { pasta };
+    const folder = await api.folder.listById(folderId);
+    return { folder };
 }
 
 
@@ -100,20 +100,20 @@ const deleteFolder = async (folder) => {
         folderId: folder.id_pasta
     }
 
-    const pasta = await api.folder.deleteById(deleteFolder)
-    return { pasta };
+    const folder = await api.folder.deleteById(deleteFolder)
+    return { folder };
     
 }
 
 module.exports = {
-    criarDocumento,
-    listarDocumento,
-    listarTodosDocumento,
-    assinarDocumento,
-    criarPasta,
-    movendoPasta,
-    ListPasta,
+    createDocument,
+    listDocumentById,
+    listDocumentAll,
+    signDocument,
+    createFolder,
+    moveDocumentsFolder,
+    listFolderById,
     deleteDocument,
-    listarTodasPastas,
+    listFolderAll,
     deleteFolder
 }
