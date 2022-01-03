@@ -21,11 +21,11 @@ Exclusão **"variables": $variables"**
 
 Antes:
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/e1cc01e5-9ec7-4693-b3bb-f9886b783435)
+![image](https://user-images.githubusercontent.com/68115778/147972463-2d99d3cb-16bb-4f48-9325-ec44a350af7c.png)
 
 Depois:
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/3857ef35-f757-4fce-8333-1a1c074b68ce) 
+![image](https://user-images.githubusercontent.com/68115778/147972498-25a11bea-55de-4152-af14-337bf1fb6ddb.png)
 
 Fazer este mesmo Processo para : **deleteById.graphql** / **signById.graphql**
 
@@ -35,12 +35,12 @@ no arquivo **.ENV** os atributos **Token**, **URL** e caso queira realizar teste
 
 exemplo:
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/2d7af4c7-10cc-44d7-849e-15ed00463804) 
+![image](https://user-images.githubusercontent.com/68115778/147972535-a9aef7cb-57a0-4dcd-8671-4a1d56ed7667.png)
 
 apos instanciar no arquivo .ENV os atributos deveram ser chamados no nosso serviço,
 para que a biblioteca possa identificar o token existente.
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/9a165b46-4b31-44f8-8317-7ff25f4c42f9) 
+![image](https://user-images.githubusercontent.com/68115778/147972560-99f602ef-fbf3-49e4-81a4-14877b62fec3.png)
 
 caso não seja instanciado o token, a biblioteca automaticamente ira gerar um token default,
 ocasionando divergência de Informacoes.
@@ -52,7 +52,7 @@ alguns atributos obrigatórios em forma de objetos.
 
 exemplo:
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/60f69ebf-66d1-48de-9c0c-7970a9f8c70e) 
+![image](https://user-images.githubusercontent.com/68115778/147972585-8332bfcc-eba1-479b-bd0e-c884eae236d7.png) 
 
 ### - Listando Documento Por Id
 
@@ -62,7 +62,7 @@ um objeto conforme a imagem abaixo nos mostra.
 
 exemplo: 
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/6a1fee7a-7fb8-42b2-9dae-d10e59fcb0df) 
+![image](https://user-images.githubusercontent.com/68115778/147972618-27533a02-1d0f-4e72-9fce-111fe603d216.png)
 
 
 ### - Listando Todos os Documentos
@@ -76,7 +76,7 @@ deixando como padrão o valor inicial de 1 pagina, caso não seja passado nenhum
 
 exemplo:
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/b8cd0c24-5e5f-4fa7-aa7a-7c2ae788aaa3) 
+![image](https://user-images.githubusercontent.com/68115778/147972663-df2e45ef-c19e-47c3-aea7-469ad9a62928.png) 
 
 
 ### - Assinar Documento
@@ -92,8 +92,7 @@ nos mostra.
 
 exemplo:
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/4ce06e49-a27c-49eb-8b39-87606ee3318c) 
-
+![image](https://user-images.githubusercontent.com/68115778/147972687-f2098712-ecbf-4a9b-9c0e-c98b669ff894.png)
 
 ### - Deletar Documento
 
@@ -102,7 +101,7 @@ via parâmetro para API conforme o exemplo abaixo nos mostra.
 
 exemplo:
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/8ce6f460-87ad-450f-9f75-8e400d9e0798) 
+![image](https://user-images.githubusercontent.com/68115778/147972703-2c3365ce-931c-426a-a74c-928afc497cb4.png)
 
 ### - Criar Pasta
 
@@ -112,7 +111,7 @@ exemplo abaixo nos mostra,
 
 exemplo:
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/2bb67262-2595-4055-863b-4d648fd4c7d4) 
+![image](https://user-images.githubusercontent.com/68115778/147972734-c326320e-6bad-4408-8cff-bd73ae683efd.png)
 
 ### - Listar Todas as Pastas
 
@@ -123,7 +122,7 @@ Podendo passar como parâmetro também a quantidade de paginas que serão exibid
 
 Exemplo: 
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/53acdf7d-822f-4290-bd6b-a767dd547e34) 
+![image](https://user-images.githubusercontent.com/68115778/147972748-a0c1c9c3-ff6d-4bdc-ba8c-6898b5a919f4.png)
 
 ### - Listar Pastas Por ID
 
@@ -133,7 +132,7 @@ nos mostra.
 
 Exemplo:
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/0c63b643-2c6d-445a-bff3-b6e8d18c0c91) 
+![image](https://user-images.githubusercontent.com/68115778/147972775-2327579b-ee75-439c-98ef-257aa349ef0e.png)
 
 ### - Deletando Pasta
 
@@ -143,7 +142,7 @@ que sera deletada, que devera estar dentro de um objeto conforme o exemplo abaix
 Ressaltando que somente a pasta sera deletada, caso haja documentos dentro da pasta, automaticamente
 sera movido para a aba documentos dentro da plataforma Autentique.
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/63e8824f-d4a4-4c10-aba4-b635d618a994) 
+![image](https://user-images.githubusercontent.com/68115778/147972798-4a2f0c77-0006-4673-9cac-9847f89f9c0d.png)
 
 ### - Mover Documentos Para Pastas.
 
@@ -154,7 +153,4 @@ Os Ids deveram estar dentro de um objeto conforme o exemplo abaixo nos mostra.
 
 exemplo:
 
-![image.png](https://dev.azure.com/CUCAFRESCAINFORMATICALTDA/3d126b21-e2b5-4c1e-88a7-cd60c57f0257/_apis/wiki/wikis/424a55dc-c2b4-4d83-95ed-919633f8300d/pages/13/comments/attachments/cd1f46c2-8e17-4fb2-9237-71a52e5a9480) 
-
-
-
+![image](https://user-images.githubusercontent.com/68115778/147972813-c2f884f0-0d65-4afc-b581-11ca399c0ba5.png)
