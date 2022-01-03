@@ -45,30 +45,30 @@ const signDocument = async (documento) => {
 };
 
 const createFolder = async (dados) => {
-    const folder = {
+    const pasta = {
         folder: {
             name: dados.id_cliente + ' - ' + dados.chave
         }
     }
 
-    return await api.folder.create(folder);
+    return await api.folder.create(pasta);
 
 }
 
-const moveDocumentsFolder = async (arquivo, assinatura) => {
+const moveDocumentFolder = async (idFolder, assinatura) => {
 
-    const folder = {
+    const pasta = {
             documentId: assinatura.data.createDocument.id,
-            folderId: arquivo.data.createFolder.id
+            folderId: idFolder
     }
     
-    return await api.folder.moveDocumentById(folder);
+    return await api.folder.moveDocumentById(pasta);
 }
 
-const listFolderAll = async () => {
+const listAllFolders = async () => {
 
-    const folder = await api.folder.listAll(1);
-    const result = folder.data.folders
+    const pasta = await api.folder.listAll(10);
+    const result = pasta.data.folders
     return { result };
 
 };
@@ -78,8 +78,8 @@ const listFolderById = async (folder) => {
     const folderId = {
         folderId: folder.data.createFolder.id || folder
     }
-    const folder = await api.folder.listById(folderId);
-    return { folder };
+    const pasta = await api.folder.listById(folderId);
+    return { pasta };
 }
 
 
@@ -100,8 +100,8 @@ const deleteFolder = async (folder) => {
         folderId: folder.id_pasta
     }
 
-    const folder = await api.folder.deleteById(deleteFolder)
-    return { folder };
+    const pasta = await api.folder.deleteById(deleteFolder)
+    return { pasta };
     
 }
 
@@ -111,9 +111,9 @@ module.exports = {
     listDocumentAll,
     signDocument,
     createFolder,
-    moveDocumentsFolder,
+    moveDocumentFolder,
     listFolderById,
     deleteDocument,
-    listFolderAll,
+    listAllFolders,
     deleteFolder
 }
